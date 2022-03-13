@@ -17,7 +17,7 @@ void test_case() {
 	for(int i = 1; i < n; i++) {
 		// if the value of k (walks needed) is greater than the combined value
 		// of the planned walks for the current and previous day, then we should
-		// the remaining walks needed for the current day so that the next day
+		// add the remaining walks needed for the current day so that the next day
 		// will benefit from the number of walks that were placed in the current day
 		if(k > a[i] + a[i-1]) {
 			dp[i] = k - (a[i] + a[i-1]);
